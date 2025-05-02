@@ -17,8 +17,9 @@ res.end()
  }   
 else{
     res.writeHead(200,{'content-type':'text/html'})
-    res.write('<form action="inputform" method="get">')
-    res.write('<input type="text" name="username" ><br>')
+    res.write('<h1>Login Form</h1>')
+    res.write('Name:<form action="inputform" method="get">')
+    res.write('password:<input type="text" name="username" ><br>')
     res.write('<input type="text" name="password" ><br>')
 res.write('<input type = "submit" value="submit">')
 res.write('</form>')
