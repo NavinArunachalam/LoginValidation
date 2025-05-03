@@ -9,7 +9,7 @@ http.createServer(function (req, res) {
 
         if (mobile.length > 10 || mobile.length < 10) {
             res.writeHead(200, { 'Content-Type': 'text/html' })
-            res.write('<h1>Mobile NNumber Must Be 10 Digits</h1>')
+            res.write('<h1>Mobile Number Must Be 10 Digits</h1>')
         }
 
         else if (emailcheck) {
